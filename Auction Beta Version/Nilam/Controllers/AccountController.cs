@@ -69,9 +69,6 @@ namespace Nilam.Controllers
 
         }
 
-
-
-
         public ActionResult LoggedIn()
         {
             if (Session["role"].ToString() == "Admin")
@@ -111,8 +108,6 @@ namespace Nilam.Controllers
             return RedirectToAction("invalidUserList");
         }
 
-
-
         //show profile
         public ActionResult showProfileInformation()
         {
@@ -134,9 +129,6 @@ namespace Nilam.Controllers
 
             return RedirectToAction("LoggedIn");
         }
-
-
-
 
         public ActionResult Logout()
         {
